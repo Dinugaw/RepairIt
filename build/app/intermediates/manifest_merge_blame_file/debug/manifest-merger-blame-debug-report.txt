@@ -1,0 +1,271 @@
+1<?xml version="1.0" encoding="utf-8"?>
+2<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+3    package="com.example.repairit"
+4    android:versionCode="1"
+5    android:versionName="1.0.0" >
+6
+7    <uses-sdk
+8        android:minSdkVersion="16"
+9        android:targetSdkVersion="28" />
+10    <!--
+11         Flutter needs it to communicate with the running application
+12         to allow setting breakpoints, to provide hot reload, etc.
+13    -->
+14    <uses-permission android:name="android.permission.INTERNET" />
+14-->/Users/dinuga/Desktop/BCS Project/repair_me/android/app/src/debug/AndroidManifest.xml:6:5-66
+14-->/Users/dinuga/Desktop/BCS Project/repair_me/android/app/src/debug/AndroidManifest.xml:6:22-64
+15    <!-- Although the *SdkVersion is captured in gradle build files, this is required for non gradle builds -->
+16    <!-- <uses-sdk android:minSdkVersion="14" /> -->
+17    <uses-permission android:name="android.permission.ACCESS_NETWORK_STATE" />
+17-->[com.google.firebase:firebase-firestore:21.3.0] /Users/dinuga/.gradle/caches/transforms-2/files-2.1/d030fd5453e93c70089347f9c9d7477e/jetified-firebase-firestore-21.3.0/AndroidManifest.xml:13:5-79
+17-->[com.google.firebase:firebase-firestore:21.3.0] /Users/dinuga/.gradle/caches/transforms-2/files-2.1/d030fd5453e93c70089347f9c9d7477e/jetified-firebase-firestore-21.3.0/AndroidManifest.xml:13:22-76
+18    <uses-permission android:name="android.permission.WAKE_LOCK" /> <!-- Required by older versions of Google Play services to create IID tokens -->
+18-->[com.google.firebase:firebase-iid:20.0.1] /Users/dinuga/.gradle/caches/transforms-2/files-2.1/688b70b2653200a415d47c2e75101560/firebase-iid-20.0.1/AndroidManifest.xml:24:5-68
+18-->[com.google.firebase:firebase-iid:20.0.1] /Users/dinuga/.gradle/caches/transforms-2/files-2.1/688b70b2653200a415d47c2e75101560/firebase-iid-20.0.1/AndroidManifest.xml:24:22-65
+19    <uses-permission android:name="com.google.android.c2dm.permission.RECEIVE" />
+19-->[com.google.firebase:firebase-iid:20.0.1] /Users/dinuga/.gradle/caches/transforms-2/files-2.1/688b70b2653200a415d47c2e75101560/firebase-iid-20.0.1/AndroidManifest.xml:26:5-82
+19-->[com.google.firebase:firebase-iid:20.0.1] /Users/dinuga/.gradle/caches/transforms-2/files-2.1/688b70b2653200a415d47c2e75101560/firebase-iid-20.0.1/AndroidManifest.xml:26:22-79
+20    <!--
+21 io.flutter.app.FlutterApplication is an android.app.Application that
+22         calls FlutterMain.startInitialization(this); in its onCreate method.
+23         In most cases you can leave this as-is, but you if you want to provide
+24         additional functionality it is fine to subclass or reimplement
+25         FlutterApplication and put your custom class here.
+26    -->
+27    <application
+27-->/Users/dinuga/Desktop/BCS Project/repair_me/android/app/src/main/AndroidManifest.xml:8:5-46:19
+28        android:name="io.flutter.app.FlutterApplication"
+28-->/Users/dinuga/Desktop/BCS Project/repair_me/android/app/src/main/AndroidManifest.xml:9:9-57
+29        android:appComponentFactory="androidx.core.app.CoreComponentFactory"
+29-->[androidx.core:core:1.1.0] /Users/dinuga/.gradle/caches/transforms-2/files-2.1/bef79c3e255356c0892d43a27fa086a0/core-1.1.0/AndroidManifest.xml:24:18-86
+30        android:debuggable="true"
+31        android:icon="@mipmap/ic_launcher"
+31-->/Users/dinuga/Desktop/BCS Project/repair_me/android/app/src/main/AndroidManifest.xml:11:9-43
+32        android:label="repair_me" >
+32-->/Users/dinuga/Desktop/BCS Project/repair_me/android/app/src/main/AndroidManifest.xml:10:9-34
+33        <activity
+33-->/Users/dinuga/Desktop/BCS Project/repair_me/android/app/src/main/AndroidManifest.xml:12:9-40:20
+34            android:name="com.example.repairit.MainActivity"
+34-->/Users/dinuga/Desktop/BCS Project/repair_me/android/app/src/main/AndroidManifest.xml:13:13-41
+35            android:configChanges="orientation|keyboardHidden|keyboard|screenSize|smallestScreenSize|locale|layoutDirection|fontScale|screenLayout|density|uiMode"
+35-->/Users/dinuga/Desktop/BCS Project/repair_me/android/app/src/main/AndroidManifest.xml:16:13-163
+36            android:hardwareAccelerated="true"
+36-->/Users/dinuga/Desktop/BCS Project/repair_me/android/app/src/main/AndroidManifest.xml:17:13-47
+37            android:launchMode="singleTop"
+37-->/Users/dinuga/Desktop/BCS Project/repair_me/android/app/src/main/AndroidManifest.xml:14:13-43
+38            android:theme="@style/LaunchTheme"
+38-->/Users/dinuga/Desktop/BCS Project/repair_me/android/app/src/main/AndroidManifest.xml:15:13-47
+39            android:windowSoftInputMode="adjustResize" >
+39-->/Users/dinuga/Desktop/BCS Project/repair_me/android/app/src/main/AndroidManifest.xml:18:13-55
+40
+41            <!--
+42                 Specifies an Android theme to apply to this Activity as soon as
+43                 the Android process has started. This theme is visible to the user
+44                 while the Flutter UI initializes. After that, this theme continues
+45                 to determine the Window background behind the Flutter UI.
+46            -->
+47            <meta-data
+47-->/Users/dinuga/Desktop/BCS Project/repair_me/android/app/src/main/AndroidManifest.xml:23:13-26:17
+48                android:name="io.flutter.embedding.android.NormalTheme"
+48-->/Users/dinuga/Desktop/BCS Project/repair_me/android/app/src/main/AndroidManifest.xml:24:15-70
+49                android:resource="@style/NormalTheme" />
+49-->/Users/dinuga/Desktop/BCS Project/repair_me/android/app/src/main/AndroidManifest.xml:25:15-52
+50            <!--
+51                 Displays an Android View that continues showing the launch screen
+52                 Drawable until Flutter paints its first frame, then this splash
+53                 screen fades out. A splash screen is useful to avoid any visual
+54                 gap between the end of Android's launch screen and the painting of
+55                 Flutter's first frame.
+56            -->
+57            <meta-data
+57-->/Users/dinuga/Desktop/BCS Project/repair_me/android/app/src/main/AndroidManifest.xml:32:13-35:17
+58                android:name="io.flutter.embedding.android.SplashScreenDrawable"
+58-->/Users/dinuga/Desktop/BCS Project/repair_me/android/app/src/main/AndroidManifest.xml:33:15-79
+59                android:resource="@drawable/launch_background" />
+59-->/Users/dinuga/Desktop/BCS Project/repair_me/android/app/src/main/AndroidManifest.xml:34:15-61
+60
+61            <intent-filter>
+61-->/Users/dinuga/Desktop/BCS Project/repair_me/android/app/src/main/AndroidManifest.xml:36:13-39:29
+62                <action android:name="android.intent.action.MAIN" />
+62-->/Users/dinuga/Desktop/BCS Project/repair_me/android/app/src/main/AndroidManifest.xml:37:17-68
+62-->/Users/dinuga/Desktop/BCS Project/repair_me/android/app/src/main/AndroidManifest.xml:37:25-66
+63
+64                <category android:name="android.intent.category.LAUNCHER" />
+64-->/Users/dinuga/Desktop/BCS Project/repair_me/android/app/src/main/AndroidManifest.xml:38:17-76
+64-->/Users/dinuga/Desktop/BCS Project/repair_me/android/app/src/main/AndroidManifest.xml:38:27-74
+65            </intent-filter>
+66        </activity>
+67        <!--
+68             Don't delete the meta-data below.
+69             This is used by the Flutter tool to generate GeneratedPluginRegistrant.java
+70        -->
+71        <meta-data
+71-->/Users/dinuga/Desktop/BCS Project/repair_me/android/app/src/main/AndroidManifest.xml:43:9-45:33
+72            android:name="flutterEmbedding"
+72-->/Users/dinuga/Desktop/BCS Project/repair_me/android/app/src/main/AndroidManifest.xml:44:13-44
+73            android:value="2" />
+73-->/Users/dinuga/Desktop/BCS Project/repair_me/android/app/src/main/AndroidManifest.xml:45:13-30
+74
+75        <service
+75-->[:firebase_auth] /Users/dinuga/Desktop/BCS Project/repair_me/build/firebase_auth/intermediates/library_manifest/debug/AndroidManifest.xml:8:9-12:19
+76            android:name="com.google.firebase.components.ComponentDiscoveryService"
+76-->[:firebase_auth] /Users/dinuga/Desktop/BCS Project/repair_me/build/firebase_auth/intermediates/library_manifest/debug/AndroidManifest.xml:8:18-89
+77            android:directBootAware="true"
+77-->[com.google.firebase:firebase-common:19.3.0] /Users/dinuga/.gradle/caches/transforms-2/files-2.1/ba9ae617dedadf1bea53af2e725cc5e3/jetified-firebase-common-19.3.0/AndroidManifest.xml:34:13-43
+78            android:exported="false" >
+78-->[com.google.firebase:firebase-auth:19.2.0] /Users/dinuga/.gradle/caches/transforms-2/files-2.1/2f6b0b11ab68c24e946880bcfa3551ca/firebase-auth-19.2.0/AndroidManifest.xml:35:13-37
+79            <meta-data
+79-->[:firebase_auth] /Users/dinuga/Desktop/BCS Project/repair_me/build/firebase_auth/intermediates/library_manifest/debug/AndroidManifest.xml:9:13-11:85
+80                android:name="com.google.firebase.components:io.flutter.plugins.firebaseauth.FlutterFirebaseAppRegistrar"
+80-->[:firebase_auth] /Users/dinuga/Desktop/BCS Project/repair_me/build/firebase_auth/intermediates/library_manifest/debug/AndroidManifest.xml:10:17-122
+81                android:value="com.google.firebase.components.ComponentRegistrar" />
+81-->[:firebase_auth] /Users/dinuga/Desktop/BCS Project/repair_me/build/firebase_auth/intermediates/library_manifest/debug/AndroidManifest.xml:11:17-82
+82            <meta-data
+82-->[:firebase_messaging] /Users/dinuga/Desktop/BCS Project/repair_me/build/firebase_messaging/intermediates/library_manifest/debug/AndroidManifest.xml:14:13-16:85
+83                android:name="com.google.firebase.components:io.flutter.plugins.firebasemessaging.FlutterFirebaseAppRegistrar"
+83-->[:firebase_messaging] /Users/dinuga/Desktop/BCS Project/repair_me/build/firebase_messaging/intermediates/library_manifest/debug/AndroidManifest.xml:15:17-127
+84                android:value="com.google.firebase.components.ComponentRegistrar" />
+84-->[:firebase_messaging] /Users/dinuga/Desktop/BCS Project/repair_me/build/firebase_messaging/intermediates/library_manifest/debug/AndroidManifest.xml:16:17-82
+85            <meta-data
+85-->[:cloud_firestore] /Users/dinuga/Desktop/BCS Project/repair_me/build/cloud_firestore/intermediates/library_manifest/debug/AndroidManifest.xml:9:13-11:85
+86                android:name="com.google.firebase.components:io.flutter.plugins.firebase.cloudfirestore.FlutterFirebaseAppRegistrar"
+86-->[:cloud_firestore] /Users/dinuga/Desktop/BCS Project/repair_me/build/cloud_firestore/intermediates/library_manifest/debug/AndroidManifest.xml:10:17-133
+87                android:value="com.google.firebase.components.ComponentRegistrar" />
+87-->[:cloud_firestore] /Users/dinuga/Desktop/BCS Project/repair_me/build/cloud_firestore/intermediates/library_manifest/debug/AndroidManifest.xml:11:17-82
+88            <meta-data
+88-->[:firebase_database] /Users/dinuga/Desktop/BCS Project/repair_me/build/firebase_database/intermediates/library_manifest/debug/AndroidManifest.xml:9:13-11:85
+89                android:name="com.google.firebase.components:io.flutter.plugins.firebase.database.FlutterFirebaseAppRegistrar"
+89-->[:firebase_database] /Users/dinuga/Desktop/BCS Project/repair_me/build/firebase_database/intermediates/library_manifest/debug/AndroidManifest.xml:10:17-127
+90                android:value="com.google.firebase.components.ComponentRegistrar" />
+90-->[:firebase_database] /Users/dinuga/Desktop/BCS Project/repair_me/build/firebase_database/intermediates/library_manifest/debug/AndroidManifest.xml:11:17-82
+91            <meta-data
+91-->[:firebase_storage] /Users/dinuga/Desktop/BCS Project/repair_me/build/firebase_storage/intermediates/library_manifest/debug/AndroidManifest.xml:9:13-11:85
+92                android:name="com.google.firebase.components:io.flutter.plugins.firebase.storage.FlutterFirebaseAppRegistrar"
+92-->[:firebase_storage] /Users/dinuga/Desktop/BCS Project/repair_me/build/firebase_storage/intermediates/library_manifest/debug/AndroidManifest.xml:10:17-126
+93                android:value="com.google.firebase.components.ComponentRegistrar" />
+93-->[:firebase_storage] /Users/dinuga/Desktop/BCS Project/repair_me/build/firebase_storage/intermediates/library_manifest/debug/AndroidManifest.xml:11:17-82
+94            <meta-data
+94-->[:firebase_core] /Users/dinuga/Desktop/BCS Project/repair_me/build/firebase_core/intermediates/library_manifest/debug/AndroidManifest.xml:9:13-11:85
+95                android:name="com.google.firebase.components:io.flutter.plugins.firebase.core.FlutterFirebaseAppRegistrar"
+95-->[:firebase_core] /Users/dinuga/Desktop/BCS Project/repair_me/build/firebase_core/intermediates/library_manifest/debug/AndroidManifest.xml:10:17-123
+96                android:value="com.google.firebase.components.ComponentRegistrar" />
+96-->[:firebase_core] /Users/dinuga/Desktop/BCS Project/repair_me/build/firebase_core/intermediates/library_manifest/debug/AndroidManifest.xml:11:17-82
+97            <meta-data
+97-->[com.google.firebase:firebase-auth:19.2.0] /Users/dinuga/.gradle/caches/transforms-2/files-2.1/2f6b0b11ab68c24e946880bcfa3551ca/firebase-auth-19.2.0/AndroidManifest.xml:36:13-38:85
+98                android:name="com.google.firebase.components:com.google.firebase.auth.FirebaseAuthRegistrar"
+98-->[com.google.firebase:firebase-auth:19.2.0] /Users/dinuga/.gradle/caches/transforms-2/files-2.1/2f6b0b11ab68c24e946880bcfa3551ca/firebase-auth-19.2.0/AndroidManifest.xml:37:17-109
+99                android:value="com.google.firebase.components.ComponentRegistrar" />
+99-->[com.google.firebase:firebase-auth:19.2.0] /Users/dinuga/.gradle/caches/transforms-2/files-2.1/2f6b0b11ab68c24e946880bcfa3551ca/firebase-auth-19.2.0/AndroidManifest.xml:38:17-82
+100            <meta-data
+100-->[com.google.firebase:firebase-firestore:21.3.0] /Users/dinuga/.gradle/caches/transforms-2/files-2.1/d030fd5453e93c70089347f9c9d7477e/jetified-firebase-firestore-21.3.0/AndroidManifest.xml:20:13-22:85
+101                android:name="com.google.firebase.components:com.google.firebase.firestore.FirestoreRegistrar"
+101-->[com.google.firebase:firebase-firestore:21.3.0] /Users/dinuga/.gradle/caches/transforms-2/files-2.1/d030fd5453e93c70089347f9c9d7477e/jetified-firebase-firestore-21.3.0/AndroidManifest.xml:21:17-111
+102                android:value="com.google.firebase.components.ComponentRegistrar" />
+102-->[com.google.firebase:firebase-firestore:21.3.0] /Users/dinuga/.gradle/caches/transforms-2/files-2.1/d030fd5453e93c70089347f9c9d7477e/jetified-firebase-firestore-21.3.0/AndroidManifest.xml:22:17-82
+103            <meta-data
+103-->[com.google.firebase:firebase-database:17.0.0] /Users/dinuga/.gradle/caches/transforms-2/files-2.1/1a087490056a754c612e55f62b3321e7/jetified-firebase-database-17.0.0/AndroidManifest.xml:30:13-32:85
+104                android:name="com.google.firebase.components:com.google.firebase.database.DatabaseRegistrar"
+104-->[com.google.firebase:firebase-database:17.0.0] /Users/dinuga/.gradle/caches/transforms-2/files-2.1/1a087490056a754c612e55f62b3321e7/jetified-firebase-database-17.0.0/AndroidManifest.xml:31:17-109
+105                android:value="com.google.firebase.components.ComponentRegistrar" />
+105-->[com.google.firebase:firebase-database:17.0.0] /Users/dinuga/.gradle/caches/transforms-2/files-2.1/1a087490056a754c612e55f62b3321e7/jetified-firebase-database-17.0.0/AndroidManifest.xml:32:17-82
+106            <meta-data
+106-->[com.google.firebase:firebase-storage:17.0.0] /Users/dinuga/.gradle/caches/transforms-2/files-2.1/d069a4c5060091ed770ce958288f3929/jetified-firebase-storage-17.0.0/AndroidManifest.xml:31:13-33:85
+107                android:name="com.google.firebase.components:com.google.firebase.storage.StorageRegistrar"
+107-->[com.google.firebase:firebase-storage:17.0.0] /Users/dinuga/.gradle/caches/transforms-2/files-2.1/d069a4c5060091ed770ce958288f3929/jetified-firebase-storage-17.0.0/AndroidManifest.xml:32:17-107
+108                android:value="com.google.firebase.components.ComponentRegistrar" />
+108-->[com.google.firebase:firebase-storage:17.0.0] /Users/dinuga/.gradle/caches/transforms-2/files-2.1/d069a4c5060091ed770ce958288f3929/jetified-firebase-storage-17.0.0/AndroidManifest.xml:33:17-82
+109            <meta-data
+109-->[com.google.firebase:firebase-iid:20.0.1] /Users/dinuga/.gradle/caches/transforms-2/files-2.1/688b70b2653200a415d47c2e75101560/firebase-iid-20.0.1/AndroidManifest.xml:32:13-34:85
+110                android:name="com.google.firebase.components:com.google.firebase.iid.Registrar"
+110-->[com.google.firebase:firebase-iid:20.0.1] /Users/dinuga/.gradle/caches/transforms-2/files-2.1/688b70b2653200a415d47c2e75101560/firebase-iid-20.0.1/AndroidManifest.xml:33:17-96
+111                android:value="com.google.firebase.components.ComponentRegistrar" />
+111-->[com.google.firebase:firebase-iid:20.0.1] /Users/dinuga/.gradle/caches/transforms-2/files-2.1/688b70b2653200a415d47c2e75101560/firebase-iid-20.0.1/AndroidManifest.xml:34:17-82
+112        </service>
+113        <service android:name="io.flutter.plugins.firebasemessaging.FlutterFirebaseMessagingService" >
+113-->[:firebase_messaging] /Users/dinuga/Desktop/BCS Project/repair_me/build/firebase_messaging/intermediates/library_manifest/debug/AndroidManifest.xml:8:9-12:19
+113-->[:firebase_messaging] /Users/dinuga/Desktop/BCS Project/repair_me/build/firebase_messaging/intermediates/library_manifest/debug/AndroidManifest.xml:8:18-101
+114            <intent-filter>
+114-->[:firebase_messaging] /Users/dinuga/Desktop/BCS Project/repair_me/build/firebase_messaging/intermediates/library_manifest/debug/AndroidManifest.xml:9:13-11:29
+115                <action android:name="com.google.firebase.MESSAGING_EVENT" />
+115-->[:firebase_messaging] /Users/dinuga/Desktop/BCS Project/repair_me/build/firebase_messaging/intermediates/library_manifest/debug/AndroidManifest.xml:10:17-78
+115-->[:firebase_messaging] /Users/dinuga/Desktop/BCS Project/repair_me/build/firebase_messaging/intermediates/library_manifest/debug/AndroidManifest.xml:10:25-75
+116            </intent-filter>
+117        </service>
+118
+119        <activity
+119-->[com.google.firebase:firebase-auth:19.2.0] /Users/dinuga/.gradle/caches/transforms-2/files-2.1/2f6b0b11ab68c24e946880bcfa3551ca/firebase-auth-19.2.0/AndroidManifest.xml:24:9-31:50
+120            android:name="com.google.firebase.auth.internal.FederatedSignInActivity"
+120-->[com.google.firebase:firebase-auth:19.2.0] /Users/dinuga/.gradle/caches/transforms-2/files-2.1/2f6b0b11ab68c24e946880bcfa3551ca/firebase-auth-19.2.0/AndroidManifest.xml:25:13-85
+121            android:excludeFromRecents="true"
+121-->[com.google.firebase:firebase-auth:19.2.0] /Users/dinuga/.gradle/caches/transforms-2/files-2.1/2f6b0b11ab68c24e946880bcfa3551ca/firebase-auth-19.2.0/AndroidManifest.xml:26:13-46
+122            android:exported="true"
+122-->[com.google.firebase:firebase-auth:19.2.0] /Users/dinuga/.gradle/caches/transforms-2/files-2.1/2f6b0b11ab68c24e946880bcfa3551ca/firebase-auth-19.2.0/AndroidManifest.xml:27:13-36
+123            android:launchMode="singleTask"
+123-->[com.google.firebase:firebase-auth:19.2.0] /Users/dinuga/.gradle/caches/transforms-2/files-2.1/2f6b0b11ab68c24e946880bcfa3551ca/firebase-auth-19.2.0/AndroidManifest.xml:28:13-44
+124            android:permission="com.google.firebase.auth.api.gms.permission.LAUNCH_FEDERATED_SIGN_IN"
+124-->[com.google.firebase:firebase-auth:19.2.0] /Users/dinuga/.gradle/caches/transforms-2/files-2.1/2f6b0b11ab68c24e946880bcfa3551ca/firebase-auth-19.2.0/AndroidManifest.xml:29:13-102
+125            android:theme="@android:style/Theme.Translucent.NoTitleBar" />
+125-->[com.google.firebase:firebase-auth:19.2.0] /Users/dinuga/.gradle/caches/transforms-2/files-2.1/2f6b0b11ab68c24e946880bcfa3551ca/firebase-auth-19.2.0/AndroidManifest.xml:30:13-72
+126        <!--
+127             FirebaseMessagingService performs security checks at runtime,
+128             but set to not exported to explicitly avoid allowing another app to call it.
+129        -->
+130        <service
+130-->[com.google.firebase:firebase-messaging:20.0.1] /Users/dinuga/.gradle/caches/transforms-2/files-2.1/7360ba1fb09edb924031a42827112314/jetified-firebase-messaging-20.0.1/AndroidManifest.xml:28:9-34:19
+131            android:name="com.google.firebase.messaging.FirebaseMessagingService"
+131-->[com.google.firebase:firebase-messaging:20.0.1] /Users/dinuga/.gradle/caches/transforms-2/files-2.1/7360ba1fb09edb924031a42827112314/jetified-firebase-messaging-20.0.1/AndroidManifest.xml:29:13-82
+132            android:exported="false" >
+132-->[com.google.firebase:firebase-messaging:20.0.1] /Users/dinuga/.gradle/caches/transforms-2/files-2.1/7360ba1fb09edb924031a42827112314/jetified-firebase-messaging-20.0.1/AndroidManifest.xml:30:13-37
+133            <intent-filter android:priority="-500" >
+133-->[:firebase_messaging] /Users/dinuga/Desktop/BCS Project/repair_me/build/firebase_messaging/intermediates/library_manifest/debug/AndroidManifest.xml:9:13-11:29
+134                <action android:name="com.google.firebase.MESSAGING_EVENT" />
+134-->[:firebase_messaging] /Users/dinuga/Desktop/BCS Project/repair_me/build/firebase_messaging/intermediates/library_manifest/debug/AndroidManifest.xml:10:17-78
+134-->[:firebase_messaging] /Users/dinuga/Desktop/BCS Project/repair_me/build/firebase_messaging/intermediates/library_manifest/debug/AndroidManifest.xml:10:25-75
+135            </intent-filter>
+136        </service>
+137
+138        <receiver
+138-->[com.google.firebase:firebase-iid:20.0.1] /Users/dinuga/.gradle/caches/transforms-2/files-2.1/688b70b2653200a415d47c2e75101560/firebase-iid-20.0.1/AndroidManifest.xml:37:9-44:20
+139            android:name="com.google.firebase.iid.FirebaseInstanceIdReceiver"
+139-->[com.google.firebase:firebase-iid:20.0.1] /Users/dinuga/.gradle/caches/transforms-2/files-2.1/688b70b2653200a415d47c2e75101560/firebase-iid-20.0.1/AndroidManifest.xml:38:13-78
+140            android:exported="true"
+140-->[com.google.firebase:firebase-iid:20.0.1] /Users/dinuga/.gradle/caches/transforms-2/files-2.1/688b70b2653200a415d47c2e75101560/firebase-iid-20.0.1/AndroidManifest.xml:39:13-36
+141            android:permission="com.google.android.c2dm.permission.SEND" >
+141-->[com.google.firebase:firebase-iid:20.0.1] /Users/dinuga/.gradle/caches/transforms-2/files-2.1/688b70b2653200a415d47c2e75101560/firebase-iid-20.0.1/AndroidManifest.xml:40:13-73
+142            <intent-filter>
+142-->[com.google.firebase:firebase-iid:20.0.1] /Users/dinuga/.gradle/caches/transforms-2/files-2.1/688b70b2653200a415d47c2e75101560/firebase-iid-20.0.1/AndroidManifest.xml:41:13-43:29
+143                <action android:name="com.google.android.c2dm.intent.RECEIVE" />
+143-->[com.google.firebase:firebase-iid:20.0.1] /Users/dinuga/.gradle/caches/transforms-2/files-2.1/688b70b2653200a415d47c2e75101560/firebase-iid-20.0.1/AndroidManifest.xml:42:17-81
+143-->[com.google.firebase:firebase-iid:20.0.1] /Users/dinuga/.gradle/caches/transforms-2/files-2.1/688b70b2653200a415d47c2e75101560/firebase-iid-20.0.1/AndroidManifest.xml:42:25-78
+144            </intent-filter>
+145        </receiver>
+146
+147        <activity
+147-->[com.google.android.gms:play-services-base:17.1.0] /Users/dinuga/.gradle/caches/transforms-2/files-2.1/9cca5f1278ef9f1a6445188146e629ad/play-services-base-17.1.0/AndroidManifest.xml:23:9-26:75
+148            android:name="com.google.android.gms.common.api.GoogleApiActivity"
+148-->[com.google.android.gms:play-services-base:17.1.0] /Users/dinuga/.gradle/caches/transforms-2/files-2.1/9cca5f1278ef9f1a6445188146e629ad/play-services-base-17.1.0/AndroidManifest.xml:24:13-79
+149            android:exported="false"
+149-->[com.google.android.gms:play-services-base:17.1.0] /Users/dinuga/.gradle/caches/transforms-2/files-2.1/9cca5f1278ef9f1a6445188146e629ad/play-services-base-17.1.0/AndroidManifest.xml:25:13-37
+150            android:theme="@android:style/Theme.Translucent.NoTitleBar" />
+150-->[com.google.android.gms:play-services-base:17.1.0] /Users/dinuga/.gradle/caches/transforms-2/files-2.1/9cca5f1278ef9f1a6445188146e629ad/play-services-base-17.1.0/AndroidManifest.xml:26:13-72
+151
+152        <provider
+152-->[com.google.firebase:firebase-common:19.3.0] /Users/dinuga/.gradle/caches/transforms-2/files-2.1/ba9ae617dedadf1bea53af2e725cc5e3/jetified-firebase-common-19.3.0/AndroidManifest.xml:26:9-30:39
+153            android:name="com.google.firebase.provider.FirebaseInitProvider"
+153-->[com.google.firebase:firebase-common:19.3.0] /Users/dinuga/.gradle/caches/transforms-2/files-2.1/ba9ae617dedadf1bea53af2e725cc5e3/jetified-firebase-common-19.3.0/AndroidManifest.xml:27:13-77
+154            android:authorities="com.example.repairit.firebaseinitprovider"
+154-->[com.google.firebase:firebase-common:19.3.0] /Users/dinuga/.gradle/caches/transforms-2/files-2.1/ba9ae617dedadf1bea53af2e725cc5e3/jetified-firebase-common-19.3.0/AndroidManifest.xml:28:13-72
+155            android:exported="false"
+155-->[com.google.firebase:firebase-common:19.3.0] /Users/dinuga/.gradle/caches/transforms-2/files-2.1/ba9ae617dedadf1bea53af2e725cc5e3/jetified-firebase-common-19.3.0/AndroidManifest.xml:29:13-37
+156            android:initOrder="100" />
+156-->[com.google.firebase:firebase-common:19.3.0] /Users/dinuga/.gradle/caches/transforms-2/files-2.1/ba9ae617dedadf1bea53af2e725cc5e3/jetified-firebase-common-19.3.0/AndroidManifest.xml:30:13-36
+157
+158        <meta-data
+158-->[com.google.android.gms:play-services-basement:17.0.0] /Users/dinuga/.gradle/caches/transforms-2/files-2.1/236c8988cfcbafdca7ca17db4f273695/jetified-play-services-basement-17.0.0/AndroidManifest.xml:23:9-25:69
+159            android:name="com.google.android.gms.version"
+159-->[com.google.android.gms:play-services-basement:17.0.0] /Users/dinuga/.gradle/caches/transforms-2/files-2.1/236c8988cfcbafdca7ca17db4f273695/jetified-play-services-basement-17.0.0/AndroidManifest.xml:24:13-58
+160            android:value="@integer/google_play_services_version" />
+160-->[com.google.android.gms:play-services-basement:17.0.0] /Users/dinuga/.gradle/caches/transforms-2/files-2.1/236c8988cfcbafdca7ca17db4f273695/jetified-play-services-basement-17.0.0/AndroidManifest.xml:25:13-66
+161    </application>
+162
+163</manifest>
